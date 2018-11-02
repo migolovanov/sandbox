@@ -1,0 +1,16 @@
+{
+  "name": "sandbox",
+  "version": "1.0.0",
+  "description": "Sandbox API",
+  "main": "index.js",
+  "dependencies": {
+    "micro": "^9.3.3",
+    "microrouter": "^3.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mikhail Golovanov",
+  "license": "MIT"
+}
