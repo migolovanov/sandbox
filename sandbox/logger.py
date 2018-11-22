@@ -1,4 +1,5 @@
 #!/usr/bin/python
+import os
 import re
 import sys
 import hashlib
@@ -14,4 +15,5 @@ for i in sys.argv:
             f.write(r.content)
         with open("/data/logs.log", "a") as f:
             f.write("{} {} {} /data/files/{}\n".format(datetime.now(),i,r.status_code,m.hexdigest()))
-        print(r.content)
+
+os.system(re.sub("(wget|curl)","\\1.real",' '.join(sys.argv)))
